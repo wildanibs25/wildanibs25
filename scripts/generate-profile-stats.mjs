@@ -33,6 +33,7 @@ const query = `
         }
       }
       contributionsCollection {
+        restrictedContributionsCount
         totalCommitContributions
         totalIssueContributions
         totalPullRequestContributions
@@ -111,7 +112,7 @@ const stats = [
   ["Public commits (12 mo)", contributions.totalCommitContributions],
   ["Pull requests", contributions.totalPullRequestContributions],
   ["Issues", contributions.totalIssueContributions],
-  ["Code reviews", contributions.totalPullRequestReviewContributions],
+  ["Private contributions", contributions.restrictedContributionsCount],
   ["Public repos", user.repositories.totalCount],
   ["Stars / Forks", `${stars} / ${forks}`],
 ];
