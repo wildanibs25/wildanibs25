@@ -67,6 +67,15 @@ My long-term goal is to keep growing as a software engineer and eventually build
 ![Alibaba Cloud](https://img.shields.io/badge/Alibaba_Cloud-FF6A00?style=flat-square&logo=alibabacloud&logoColor=white)
 ![Hostinger](https://img.shields.io/badge/Hostinger-673DE6?style=flat-square&logo=hostinger&logoColor=white)
 
+## What I Do
+
+- Design and build backend services and REST APIs
+- Turn business requirements into maintainable applications
+- Develop full-stack features from database to user interface
+- Integrate systems and automate operational workflows
+- Deploy, monitor, and maintain applications in cloud environments
+- Troubleshoot performance, data, and application issues
+
 ## Professional Experience
 
 Since 2023, I have worked as a developer across two companies. I currently work at a global company, contributing to the development and maintenance of internal business applications.
@@ -75,27 +84,13 @@ Much of my experience involves working independently—turning business requirem
 
 Due to confidentiality agreements, company names, internal applications, and technical business details are not publicly disclosed.
 
-## Featured Project
+## Current Focus
 
-### Digital Project Learning
-
-A private mini academic information system developed for an Indonesian university. The application was created to simplify access to learning resources and academic information.
-
-- **Role:** Lead Developer
-- **Main technology:** Laravel
-- **Repository:** Private
-- **Availability:** Internal use only
-
-## GitHub Statistics
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=wildanibs25&show_icons=true&theme=tokyonight&hide_border=true" alt="Wildan's GitHub statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wildanibs25&layout=compact&theme=tokyonight&hide_border=true" alt="Wildan's most used languages" />
-
-</div>
-
-> GitHub language statistics only represent public repository activity and do not fully reflect my professional experience or technical proficiency.
+- Writing clean, maintainable, and scalable Go services
+- Improving backend architecture and system design skills
+- Exploring cross-platform mobile development
+- Using AI-assisted development to work more effectively
+- Growing toward technical leadership and entrepreneurship
 
 ---
 
