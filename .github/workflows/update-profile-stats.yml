@@ -34,7 +34,7 @@ jobs:
       - name: Commit updated cards
         shell: bash
         run: |
-          if git diff --quiet -- profile; then
+          if [ -z "$(git status --porcelain -- profile)" ]; then
             echo "Statistics are already up to date."
             exit 0
           fi
