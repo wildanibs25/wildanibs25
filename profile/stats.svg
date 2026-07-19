@@ -8,8 +8,8 @@
   <rect class="card" x="0.5" y="0.5" width="499" height="219" rx="10"/>
   <text x="26" y="39" class="title">wildanibs25's GitHub Stats</text>
   
-      <text x="34" y="82" class="label">Commits (year)</text>
-      <text x="34" y="102" class="value">9</text>
+      <text x="34" y="82" class="label">Public commits (12 mo)</text>
+      <text x="34" y="102" class="value">11</text>
     
       <text x="270" y="82" class="label">Pull requests</text>
       <text x="270" y="102" class="value">0</text>
