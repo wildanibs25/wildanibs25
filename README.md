@@ -95,6 +95,18 @@ Due to confidentiality agreements, company names, internal applications, and tec
 - Using AI-assisted development to work more effectively
 - Growing toward technical leadership and entrepreneurship
 
+
+## GitHub Statistics
+
+<div align="center">
+
+<img height="190" src="./profile/stats.svg" alt="Wildan's GitHub statistics" />
+<img height="190" src="./profile/top-langs.svg" alt="Wildan's most used languages" />
+
+</div>
+
+> Statistics are generated daily from public GitHub activity. Private company repositories and confidential work are not included.
+
 ---
 
 <div align="center">
