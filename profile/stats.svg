@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="220" viewBox="0 0 500 220" role="img" aria-label="wildanibs25 GitHub statistics">
+  <style>
+    .card { fill: #1a1b27; stroke: #30363d; }
+    .title { fill: #70a5fd; font: 700 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .label { fill: #a9b1d6; font: 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .value { fill: #ffffff; font: 700 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  </style>
+  <rect class="card" x="0.5" y="0.5" width="499" height="219" rx="10"/>
+  <text x="26" y="39" class="title">wildanibs25's GitHub Stats</text>
+  
+      <text x="34" y="82" class="label">Commits (year)</text>
+      <text x="34" y="102" class="value">9</text>
+    
+      <text x="270" y="82" class="label">Pull requests</text>
+      <text x="270" y="102" class="value">0</text>
+    
+      <text x="34" y="124" class="label">Issues</text>
+      <text x="34" y="144" class="value">0</text>
+    
+      <text x="270" y="124" class="label">Code reviews</text>
+      <text x="270" y="144" class="value">0</text>
+    
+      <text x="34" y="166" class="label">Public repos</text>
+      <text x="34" y="186" class="value">17</text>
+    
+      <text x="270" y="166" class="label">Stars / Forks</text>
+      <text x="270" y="186" class="value">6 / 2</text>
+    
+</svg>

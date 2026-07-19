@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-label="wildanibs25 most used languages">
+  <style>
+    .card { fill: #1a1b27; stroke: #30363d; }
+    .title { fill: #70a5fd; font: 700 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .language { fill: #ffffff; font: 600 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .percentage { fill: #a9b1d6; font: 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .note { fill: #737aa2; font: 10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  </style>
+  <rect class="card" x="0.5" y="0.5" width="359" height="219" rx="10"/>
+  <text x="22" y="39" class="title">Most Used Languages</text>
+  
+      <circle cx="28" cy="74" r="5" fill="#e34c26"/>
+      <text x="42" y="78" class="language">HTML</text>
+      <text x="330" y="78" text-anchor="end" class="percentage">55.0%</text>
+    
+      <circle cx="28" cy="99" r="5" fill="#f1e05a"/>
+      <text x="42" y="103" class="language">JavaScript</text>
+      <text x="330" y="103" text-anchor="end" class="percentage">25.5%</text>
+    
+      <circle cx="28" cy="124" r="5" fill="#663399"/>
+      <text x="42" y="128" class="language">CSS</text>
+      <text x="330" y="128" text-anchor="end" class="percentage">6.5%</text>
+    
+      <circle cx="28" cy="149" r="5" fill="#4F5D95"/>
+      <text x="42" y="153" class="language">PHP</text>
+      <text x="330" y="153" text-anchor="end" class="percentage">5.2%</text>
+    
+      <circle cx="28" cy="174" r="5" fill="#f7523f"/>
+      <text x="42" y="178" class="language">Blade</text>
+      <text x="330" y="178" text-anchor="end" class="percentage">4.3%</text>
+    
+      <circle cx="28" cy="199" r="5" fill="#c6538c"/>
+      <text x="42" y="203" class="language">SCSS</text>
+      <text x="330" y="203" text-anchor="end" class="percentage">3.6%</text>
+    
+  <text x="22" y="205" class="note">Based on public, non-fork repositories</text>
+</svg>
