@@ -8,6 +8,7 @@ on:
     branches:
       - master
     paths:
+      - "scripts/generate-profile-stats.mjs"
       - ".github/workflows/update-profile-stats.yml"
 
 permissions:
@@ -25,21 +26,10 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
-      - name: Download fresh statistics
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p profile /tmp/profile-stats
-
-          curl --fail --silent --show-error --location             --retry 5 --retry-all-errors --retry-delay 10             "https://github-readme-stats.vercel.app/api?username=wildanibs25&show_icons=true&theme=tokyonight&hide_border=true"             --output /tmp/profile-stats/stats.svg
-
-          curl --fail --silent --show-error --location             --retry 5 --retry-all-errors --retry-delay 10             "https://github-readme-stats.vercel.app/api/top-langs/?username=wildanibs25&layout=compact&theme=tokyonight&hide_border=true&size_weight=0.5&count_weight=0.5"             --output /tmp/profile-stats/top-langs.svg
-
-          grep -q "<svg" /tmp/profile-stats/stats.svg
-          grep -q "<svg" /tmp/profile-stats/top-langs.svg
-
-          mv /tmp/profile-stats/stats.svg profile/stats.svg
-          mv /tmp/profile-stats/top-langs.svg profile/top-langs.svg
+      - name: Generate statistics from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-profile-stats.mjs
 
       - name: Commit updated cards
         shell: bash
