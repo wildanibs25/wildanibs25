@@ -108,7 +108,7 @@ const formatNumber = (value) =>
   new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 }).format(value);
 
 const stats = [
-  ["Commits (year)", contributions.totalCommitContributions],
+  ["Public commits (12 mo)", contributions.totalCommitContributions],
   ["Pull requests", contributions.totalPullRequestContributions],
   ["Issues", contributions.totalIssueContributions],
   ["Code reviews", contributions.totalPullRequestReviewContributions],
