@@ -1,0 +1,56 @@
+name: Update profile statistics
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/update-profile-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Download fresh statistics
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p profile /tmp/profile-stats
+
+          curl --fail --silent --show-error --location             --retry 5 --retry-all-errors --retry-delay 10             "https://github-readme-stats.vercel.app/api?username=wildanibs25&show_icons=true&theme=tokyonight&hide_border=true"             --output /tmp/profile-stats/stats.svg
+
+          curl --fail --silent --show-error --location             --retry 5 --retry-all-errors --retry-delay 10             "https://github-readme-stats.vercel.app/api/top-langs/?username=wildanibs25&layout=compact&theme=tokyonight&hide_border=true&size_weight=0.5&count_weight=0.5"             --output /tmp/profile-stats/top-langs.svg
+
+          grep -q "<svg" /tmp/profile-stats/stats.svg
+          grep -q "<svg" /tmp/profile-stats/top-langs.svg
+
+          mv /tmp/profile-stats/stats.svg profile/stats.svg
+          mv /tmp/profile-stats/top-langs.svg profile/top-langs.svg
+
+      - name: Commit updated cards
+        shell: bash
+        run: |
+          if git diff --quiet -- profile; then
+            echo "Statistics are already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: update profile statistics"
+          git push
