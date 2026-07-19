@@ -148,7 +148,7 @@ const statsSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="500" height="22
 const languageRows = languages
   .map((language, index) => {
     const percentage = totalLanguageSize ? (language.size / totalLanguageSize) * 100 : 0;
-    const y = 78 + index * 25;
+    const y = 70 + index * 23;
 
     return `
       <circle cx="28" cy="${y - 4}" r="5" fill="${escapeXml(language.color)}"/>
@@ -169,7 +169,7 @@ const languagesSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="360" height
   <rect class="card" x="0.5" y="0.5" width="359" height="219" rx="10"/>
   <text x="22" y="39" class="title">Most Used Languages</text>
   ${languageRows || '<text x="22" y="85" class="language">No public language data yet</text>'}
-  <text x="22" y="205" class="note">Based on public, non-fork repositories</text>
+  <text x="22" y="211" class="note">Based on public, non-fork repositories</text>
 </svg>`;
 
 await mkdir("profile", { recursive: true });
